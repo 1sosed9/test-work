@@ -1,0 +1,191 @@
+.aside {
+  padding: 36px 28px 76px 28px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.logo {
+  width: 37px;
+  height: 37px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+
+  span {
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+    color: #838383;
+  }
+}
+
+.nav {
+  margin-bottom: 553px;
+}
+
+.nav__wrapper {
+}
+
+.nav__list {
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 46px;
+  padding: 11px 0px 11px 11px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: 0.2s all ease-in;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    background-color: #5932ea;
+  }
+
+  &:hover .nav__item-name {
+    color: #fff;
+  }
+
+  &:hover .nav__item-arrow {
+    path {
+      stroke: #fff;
+    }
+  }
+  &:hover .nav__item-icon-stroke {
+    path {
+      stroke: #fff;
+    }
+  }
+  &:hover .nav__item-icon-fill {
+    path {
+      fill: #fff;
+    }
+  }
+  &:hover .nav__item-fill-stroke {
+    path:nth-child(odd) {
+      fill: #fff;
+      transition: 0.2s all ease-in;
+    }
+    path:nth-child(even) {
+      stroke: #fff;
+      transition: 0.2s all ease-in;
+    }
+  }
+}
+
+.nav__item-icon-stroke {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+
+  path {
+    stroke: #9197b3;
+    transition: 0.2s all ease-in;
+  }
+}
+
+.nav__item-icon-fill {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+
+  path {
+    fill: #9197b3;
+    transition: 0.2s all ease-in;
+  }
+}
+
+.nav__item-fill-stroke {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+
+  path:nth-child(odd) {
+    fill: #9197b3;
+    transition: 0.2s all ease-in;
+  }
+  path:nth-child(even) {
+    stroke: #9197b3;
+    transition: 0.2s all ease-in;
+  }
+}
+
+.nav__item-name {
+  display: inline-block;
+  color: $nav-item-name-color;
+  transition: 0.2s all ease-in;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.nav__item-arrow {
+  position: absolute;
+  right: 21px;
+  width: 16px;
+  height: 16px;
+
+  path {
+    stroke: #9197b3;
+    transition: 0.2s all ease-in;
+  }
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.person__block-img {
+  width: 42px;
+  height: 42px;
+  margin-right: 7px;
+}
+
+.person__img {
+  width: 100%;
+  height: 100%;
+}
+
+.person__info {
+}
+
+.person__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.person__job {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
