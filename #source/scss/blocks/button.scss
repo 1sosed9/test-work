@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   width: 80px;
-//   padding-left: 18px;
-//   padding-right: 18px;
+  //   padding-left: 18px;
+  //   padding-right: 18px;
   background-color: rgba(22, 192, 152, 0.38);
   border: 1px solid #00b087;
   border-radius: 4px;
@@ -20,7 +20,22 @@
   &--red {
     background-color: #ffc5c5;
     color: #df0404;
-    border: 1px solid #DF0404;
+    border: 1px solid #df0404;
     transition: 0.2s all;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    line-height: 29px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
   }
 }
