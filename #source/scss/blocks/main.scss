@@ -92,6 +92,7 @@
 .form__input {
   width: 100%;
   height: 100%;
+  background-color: #f9fbff;
   //   margin-right: 15px;
 
   &::placeholder {
@@ -144,7 +145,6 @@
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  overflow: hidden;
   color: #292d32;
 }
 
@@ -260,6 +260,7 @@
 
   .costumers__table-row {
     grid-template-columns: 90px 70px 90px 120px 76px 62px !important;
+    column-gap: 10px;
   }
 }
 
@@ -270,6 +271,10 @@
 
   .costumers__table-head .costumers__table-item {
     line-height: 16px;
+  }
+
+  .costumers__table-item {
+    overflow: hidden;
   }
 }
 
